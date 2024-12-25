@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Glass+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display&display=swap');
+
+:root{
+  --color-blue-main: rgb(0,150,250);
+  --color-shadow-blue: 0 0 5px var(--color-blue-main)
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+
+}
+
+.App{
+  min-height: 100vh;
+  background-color: rgba(0,0,0,.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.form-text{
+  width:400px;
+  border:2px solid var(--color-blue-main);
+  border-radius: 10px;
+  color: var(--color-blue-main);
+  font-style:italic ;
+  box-shadow: var(--color-shadow-blue);
+  background: #222
+
+
+}
+
+.form-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-shadow: var(--color-shadow-blue);
+  letter-spacing: 2px;
+ 
+
+}
+
+.form-title{
+  text-align: center;
+  margin: 1rem 0 5px;
+}
+
+.image{
+  width:60px;
+}
+
+.field-email, .field-password{
+  width:80%;
+  margin: 2rem auto;
+  position: relative;
+ 
+}
+
+label{
+  transition: 1s
+}
+
+.field-label-email, .field-label-password {
+  position: absolute;
+  filter: opacity(.6) ;  
+  
+}
+
+.field-label-email-value, .field-label-password-value{
+  position: absolute;
+  top:-18px;  
+  filter: opacity(1) ;
+  transition:  filter 0.3s;
+
+}
+
+.input-email, .input-password{
+  width:100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px var(--color-blue-main) solid;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.field-button{
+  width:80%;
+  margin: 1.5rem auto;
+
+}
+
+.btn-submit{
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 5px;
+  background:  linear-gradient(to left, #00f, #0af,#00f);
+  cursor: pointer;
+  border:   none;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold
+}
+
+.field-register{
+  display: flex;
+  justify-content: center;
+  gap:1rem;
+  margin: 5px 0 1.5rem
+}
+
+.make-registration{
+  font-weight: bold;
+ 
+  
+}
+
+.make-registration:hover{
+  text-decoration: underline;
+  cursor: pointer;
+
+}
